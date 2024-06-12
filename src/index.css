@@ -1,3 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    color: white;
+    font-family: "Mukta", sans-serif;
+}
+
+.bulbswing {
+  animation: swing 3s ease-in-out infinite;
+}
+
+.bulbflash {
+  animation: flash 10s linear infinite;
+}
+
+@keyframes swing{
+    0%{
+      transform: rotate(5deg);
+    }
+    50%{
+      transform: rotate(-5deg);
+    }
+    100%{
+      transform: rotate(5deg);
+    }
+}
+
+@keyframes flash{
+    0%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    1%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    1.001%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    10%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    11.001%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    11.002%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    12%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    
+  /*    */
+    39.999%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    40%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    41%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    41.001%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    
+  /*    */
+    
+    75%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    75.5%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    75.501%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    
+  /*    */
+    
+    80%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    81.001%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    81.002%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    82%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    82.001%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    82.002%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    83%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    83.001%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    83.002%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+    83.003%{
+      background: theme(colors.gray.900);
+      box-shadow: theme(boxShadow.bulbout);
+    }
+    88%{
+      background: theme(colors.blue.400);
+      box-shadow: theme(boxShadow.bulbin);
+    }
+}
